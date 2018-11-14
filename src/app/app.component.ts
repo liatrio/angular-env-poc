@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EnvService } from './env.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'boom';
+    constructor(
+        private env: EnvService
+    ) {
+     console.log('using '+ env.apiUrl);
+ }
+  title = this.env.apiUrl;
 }
