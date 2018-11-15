@@ -2,7 +2,7 @@
   window.__env = window.__env || {};
 
   // API url
-  window.__env.apiUrl = 'http://localhost.com';
+  window.__env.apiUrl = 'http://prod.com';
 
   // Whether or not to enable debug mode
   // Setting this to false will disable console output
